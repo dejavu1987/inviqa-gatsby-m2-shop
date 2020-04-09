@@ -28,9 +28,9 @@ Build for prod
 - M2 graphQl API integration
 - Semantic-UI
 
-## Trouble shooting
+## Troubleshooting
 
-In case you get an error like follows
+In case you get an error like follows during build
 
 ```
 error executing GraphQL query: { Error: Cannot query field "gatsbyCmsBlocks" on type "Query".: {"response":{"errors":[{"message":"Cannot query field \"gatsbyCmsBlocks\" on type \"Query\".","category":"graphql","locations":[{"line":2,"column":5}]}],"status":200},"request":{"query":"query($ids: [String]) {\n    gatsbyCmsBlocks(identifiers: $ids)\n    {\n        items\n        {\n            identifier\n            title\n            content\n        }\n    }\n}","variables":{"ids":["home-page-block","footer_links_block"]}}}
@@ -43,6 +43,7 @@ Comment out line number 36 in
 // yield (0, _cmsBlocks.default)(params, Obje...
 ```
 
-The feature is apparantly in progress, tried to patch the source in a fork but
-could not figure out the correct version/branch. In the future we may want to
-contribute if necessary.
+The feature is apparantly in progress, tried to patch the source in a fork here
+(https://github.com/dejavu1987/gatsby-source-magento2) but could not figure out
+the correct version/branch. In the future we may want to contribute if
+necessary.
