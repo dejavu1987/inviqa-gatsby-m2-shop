@@ -47,3 +47,6 @@ The feature is apparantly in progress, tried to patch the source in a fork here
 (https://github.com/dejavu1987/gatsby-source-magento2) but could not figure out
 the correct version/branch. In the future we may want to contribute if
 necessary.
+
+For more details on findings and current progress there is a google doc in
+shared gdrive @ `Inviqa Labs/Decoupled Magento2 Reference Architecture/`
